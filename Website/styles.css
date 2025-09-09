@@ -8,6 +8,11 @@
     src: url(fonts/NotoSans-Bold.ttf)
 }
 
+@font-face {
+    font-family: Noto-Sans-Thin;
+    src: url(fonts/NotoSans-Light.ttf)
+}
+
 html {
     font-family: 'Noto-Sans';
     font-size: 62.5%;
@@ -22,6 +27,16 @@ body {
     background-color: rgb(24, 24, 24);
 }
 
+/* Text items */
+h1 {
+    font-size: 6rem;
+}
+
+p {
+    font-size: 2rem;
+    font-family: 'Noto-Sans-Thin';
+}
+
 /* Header items */
 
 header li, a {
@@ -34,13 +49,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3rem 1rem;
+    padding: 3rem 5rem;
     background-color: rgb(24, 24, 24);
     font-family: 'Noto-Sans-Bold';
 }
 
 .nav-links {
     list-style: none;
+    padding-left: 0px;
 }
 
 .nav-links li {
@@ -71,4 +87,50 @@ header button {
 header button:hover {
     background-color: rgb(82, 82, 82);
     color: white;
+}
+
+/* Div 1 items */
+
+.div-1 {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    justify-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.div-1 h1 {
+    color: white;
+    margin-bottom: 7rem;
+}
+
+.div-1 button {
+    background-color: rgba(157, 0, 155, 0.5);
+    border-width: 1rem;
+    border-color: rgb(199, 0, 196);
+    color: white;
+    font-family: 'Noto-Sans-Bold';
+    font-size: 5rem;
+    border-radius: 5rem;
+    margin: 0rem 30rem;
+    padding: 5rem 0rem;
+    cursor: pointer;
+    border-style:solid;
+    box-shadow: 0 0 3rem 1.5rem rgba(255, 0, 251, 0.5);
+    transition: 0.3s ease 0s;
+}
+
+.div-1 button:hover {
+    background-color: rgb(199, 0, 196);
+}
+
+.div-1 p {
+    color: white;
+}
+
+.div-1-rows {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
